@@ -50,12 +50,12 @@
 
   .carousel-open:checked+.carousel-item {
     position: static;
-    opacity: 50;
+    opacity: 100;
   }
 
   .carousel-item {
-    -webkit-transition: opacity 0.7s ease-in-out;
-    transition: opacity 0.9s ease-in-out;
+    -webkit-transition: opacity 0.9s ease-in-out;
+    transition: opacity 1s ease-in-out 0.2s;
   }
 
   #carousel-1:checked~.control-1,
@@ -84,7 +84,6 @@
 
 <body>
   <div class="relative">
-    <img src="img/nav.png" class="z-10 absolute">
     <div>
       <!-- <div class="mySlides fade">
         <img src="img/hero-image.jpeg" class="w-screen h-screen opacity-70">
@@ -100,16 +99,16 @@
 
           <input class="carousel-open duration-75" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
           <div class="carousel-item absolute opacity-0" style="height:100vh;">
-            <img src="img/slide1.jpeg" class="w-screen h-screen opacity-80">
+            <img src="img/slide1.jpeg" class="w-screen h-screen opacity-70">
             <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-9/12 text-center drop-shadow-lg rounded-lg ">
               <h1 class="text-7xl m-5 text-white font-black main-shadow">NITJ WELCOMES YOU</h1>
               <h1 class="text-6xl m-5 text-white font-extrabold main-shadow">THE PLACE OF TRANSFORMATION</h1>
             </div>
           </div>
           <label for="carousel-3"
-            class="prev control-1 w-14 h-14 ml-2 md:ml-10 absolute cursor-pointer hidden text-4xl font-bold hover:text-blue-900 text-[#2167A7] hover:bg-no-repeat hover:bg-[url('img/slide4.jpeg')] hover:bg-cover opacity-70 bg-[#C7CDD0] hover:bg-center  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            class="prev control-1 w-14 h-14 ml-2 md:ml-10 absolute cursor-pointer hidden text-4xl font-bold hover:text-blue-900 text-[#2167A7] hover:bg-no-repeat hover:bg-[url('img/slide4.jpeg')] hover:bg-cover opacity-75 bg-[#C7CDD0] hover:bg-center  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
           <label for="carousel-2"
-            class="next control-1 w-14 h-14 mr-2 md:mr-10 absolute cursor-pointer hidden text-4xl font-bold hover:text-blue-900 text-[#2167A7] hover:bg-no-repeat hover:bg-[url('img/slide2.jpeg')] hover:bg-cover opacity-70 bg-[#C7CDD0]  hover:bg-center leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+            class="next control-1 w-14 h-14 mr-2 md:mr-10 absolute cursor-pointer hidden text-4xl font-bold hover:text-blue-900 text-[#2167A7] hover:bg-no-repeat hover:bg-[url('img/slide2.jpeg')] hover:bg-cover opacity-75 bg-[#C7CDD0]  hover:bg-center leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
           <!--Slide 2-->
           <input class="carousel-open duration-75" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
@@ -128,7 +127,7 @@
           <!--Slide 3-->
           <input class="carousel-open duration-75" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
           <div class="carousel-item absolute opacity-0" style="height:100vh;">
-            <img src="img/slide3.jpeg" class="w-screen h-screen opacity-70">
+            <img src="img/slide3.jpeg" class="w-screen h-screen  opacity-70">
             <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full text-center">
               <h1 class="text-7xl m-5 text-white font-black main-shadow">NITJ WELCOMES YOU</h1>
               <h1 class="text-6xl m-5 text-white font-extrabold main-shadow">78th IN OVERALL NIRF RANKING</h1>
@@ -142,7 +141,7 @@
           <!--Slide 4-->
           <input class="carousel-open duration-75" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
           <div class="carousel-item absolute opacity-0" style="height:100vh;">
-            <img src="img/slide4.jpeg" class="w-screen h-screen opacity-70">
+            <img src="img/slide4.jpeg" class="w-screen h-screen  opacity-70">
             <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full text-center">
               <h1 class="text-7xl m-5 text-white font-black main-shadow">NITJ WELCOMES YOU</h1>
               <h1 class="text-6xl m-5 text-white font-extrabold main-shadow">BAND EXCELLENT IN ARIIA RANKINGS</h1>
@@ -163,54 +162,53 @@
     <div class=" absolute items-center w-full top-2/3 ">
       <div class="grid grid-cols-5 lg:gap-10 m-10">
 
-        <div class="py-10 bg-blue-900 rounded-lg p-7 hover:scale-110 hover:bg-white">
-          <div class="text-center  hover:text-[#215ba7]">
-            <span class="demo material-symbols-outlined" id="demo1">
-              newspaper
-            </span>
-            <h1 class="text-center text-white font-semibold text-2xl" id="demo2">HAPPENINGS</h1>
+        <div class="flex h-40 flex-col text-white bg-blue-900 rounded-lg place-content-center text-center hover:text-[#215ba7] hover:bg-white hover:scale-110 hover:text-2xl ">
 
-          </div>
-        </div>
-
-
-        <div class="py-10 bg-blue-900 rounded-lg py-10">
-          <div class="text-center hover:text-[#215ba7]">
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined" class="p-5">
               school
-            </span>
-            <h2 class="text-center text-white  font-semibold text-2xl  ">PROGRAMS</h2>
 
-          </div>
+            </span>
+            <h2 class="text-center font-semibold text-2xl ">PROGRAMS</h2>
         </div>
-        <div class="py-10 bg-blue-900 rounded-lg">
-          <div class="text-center hover:text-[#215ba7]">
+
+
+        <div class="flex flex-col text-white bg-blue-900 rounded-lg place-content-center text-center hover:text-[#215ba7] hover:bg-white hover:scale-110 hover:text-2xl">
+
             <span class="material-symbols-outlined">
               biotech
-            </span>
-            <h2 class="text-center text-white  font-semibold   ">REASEARCH</h2>
 
-          </div>
+            </span>
+            <h2 class="text-center font-semibold text-2xl ">RESEARCH</h2>
         </div>
-        <div class="py-10 bg-blue-900 rounded-lg">
-          <div class="text-center hover:text-pink-700">
+
+        <div class="flex flex-col text-white bg-blue-900 rounded-lg place-content-center text-center hover:text-[#215ba7] hover:bg-white hover:scale-110 hover:text-2xl">
+
             <span class="material-symbols-outlined">
               sports_handball
-            </span>
-            <h2 class="text-center text-white  font-semibold text-2xl">C</h2>
 
-          </div>
+            </span>
+            <h2 class="text-center font-semibold text-2xl ">CAMPUS LIFE</h2>
         </div>
-        <div class="flex flex-col text-white bg-blue-900 rounded-lg place-content-center text-center hover:text-[#215ba7] hover:bg-white">
+
+        <div class="flex flex-col text-white bg-blue-900 rounded-lg place-content-center text-center hover:text-[#215ba7] hover:bg-white hover:scale-110 hover:text-2xl">
 
             <span class="material-symbols-outlined">
               real_estate_agent
 
             </span>
             <h2 class="text-center font-semibold text-2xl ">PLACEMENTS</h2>
-
-
         </div>
+
+        <div class="flex flex-col text-white bg-blue-900 rounded-lg place-content-center text-center hover:text-[#215ba7] hover:bg-white hover:scale-110 hover:text-2xl">
+
+            <span class="material-symbols-outlined">
+              newspaper
+
+            </span>
+            <h2 class="text-center font-semibold text-2xl ">HAPPENINGS</h2>
+        </div>
+
+
       </div>
 
     </div>
